@@ -20,8 +20,8 @@ public class StepTracker
  public void addDailySteps(int daily){
  dSteps.add(daily);
  }
- public int averageSteps(){
- int total = 0;
+ public double averageSteps(){
+ double total = 0;
   for(int i = 0; i < dSteps.size(); i++)
    total+=dSteps.get(i);
 return total/dSteps.size();
