@@ -3,12 +3,12 @@ public class StepTracker
 {
  /* to be implemented here */
  private int steps, aDays;
- private ArrayList <Double> dSteps;
+ private ArrayList <int> dSteps;
  
  public StepTracker(int s){
  steps = s;
  aDays = 0;
- dSteps = new ArrayList <Double> ();
+ dSteps = new ArrayList <int> ();
 }
  public int activeDays(){
   for(int i = 0; i < dSteps.size();i++)
