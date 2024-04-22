@@ -21,10 +21,12 @@ public class StepTracker
  }
  public double averageSteps(){
  double total = 0.0;
-  if(dSteps.size() == 0)
+  if(dSteps.size() == 0){
    return 0.0;
+  } else {
   for(int i = 0; i < dSteps.size(); i++)
    total+=dSteps.get(i);
 return total/dSteps.size();
+ }
  }
 } 
