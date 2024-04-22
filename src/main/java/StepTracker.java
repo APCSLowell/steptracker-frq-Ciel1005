@@ -23,7 +23,7 @@ public class StepTracker
  public int averageSteps(){
  int total = 0;
   for(int i = 0; i < dSteps.size(); i++)
-   total+=dSteps.get(i)
+   total+=dSteps.get(i);
 return total/dSteps.size();
  }
 } 
