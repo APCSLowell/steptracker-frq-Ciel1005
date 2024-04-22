@@ -11,13 +11,14 @@ public class StepTracker
  dSteps = new ArrayList <int> ();
 }
  public int activeDays(){
+  for(int i = 0; i < dSteps.size();i++)
+   if(dSteps.get(i) >= steps)
+    aDays++;
   return aDays;
  }
 
  public void addDailySteps(int daily){
  dSteps.add(daily);
-  if(daily >= steps)
-   aDays++;
  }
  public double averageSteps(){
  double total = 0.0;
