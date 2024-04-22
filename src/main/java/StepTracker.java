@@ -11,6 +11,7 @@ public class StepTracker
  dSteps = new ArrayList <Integer> ();
 }
  public int activeDays(){
+  aDays = 0;
   for(int i = 0; i < dSteps.size();i++)
    if(dSteps.get(i) >= steps)
     aDays++;
